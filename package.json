@@ -1,5 +1,5 @@
 {
-  "name": "@dotcodes/pie-chart",
+  "name": "@dort/pie-chart",
   "version": "1.0.0",
   "description": "A awesome pie chart based on the d3",
   "main": "index.html",
