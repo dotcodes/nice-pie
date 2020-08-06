@@ -35,6 +35,14 @@
     "type": "git",
     "url": "https://github.com/dotcodes/easy-pie.git"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "prettier": {
+    "trailingComma": "all"
+  },
   "keywords": [
     "chart",
     "pie-chart",
