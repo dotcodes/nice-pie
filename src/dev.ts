@@ -1,8 +1,8 @@
-import Easypie from "./index";
+import Nicepie from "./index";
 
 const ele = document.getElementById("app");
 
-Easypie.pie(ele, {
+Nicepie.pie(ele, {
   inner: {
     enabled: true,
     radius: 60,
