@@ -1,10 +1,10 @@
 import Pie from "./pie";
 
 
-class Dort {
+class Easypie {
   public static pie = Pie;
 }
 
-export default Dort;
+export default Easypie;
 
 

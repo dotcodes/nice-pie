@@ -39,7 +39,7 @@ const Pie = (container: HTMLElement, options: PieChartProps) => {
     inner: {
       enabled: false,
       radius: 60,
-      text:""
+      text: "",
     },
     data: [],
   };
@@ -53,7 +53,6 @@ const Pie = (container: HTMLElement, options: PieChartProps) => {
     .attr("height", config.height);
 
   const radius = Math.min(config.width, config.height) / 2;
-
 
   const g = svg
     .append("g")
@@ -73,26 +72,26 @@ const Pie = (container: HTMLElement, options: PieChartProps) => {
 
   const data: any = config.data;
   // Generate the pie
-  var pie = d3
+  const pie = d3
     .pie()
     .sort(null)
     .value((data: any) => data.value);
 
   // Generate the arcs
-  var arc: any = d3.arc().innerRadius(0).outerRadius(radius);
+  const arc: any = d3.arc().innerRadius(0).outerRadius(radius);
 
-  //Generate groups
-  var arcs = g
+  // Generate groups
+  const arcs = g
     .selectAll("arc")
     .data(pie(data))
     .enter()
     .append("g")
     .attr("class", "arc");
 
-  //Draw arc paths
+  // Draw arc paths
   arcs
     .append("path")
-    .attr("fill", function (d: any, i: any) {
+    .attr("fill", (d: any, i: any) => {
       if (d.data && d.data.color) {
         return d.data.color;
       } else {

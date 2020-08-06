@@ -1,10 +1,10 @@
 {
-  "name": "@dort/pie-chart",
+  "name": "easy-pie",
   "version": "1.0.0",
   "description": "A awesome pie chart based on the d3",
   "main": "index.html",
   "scripts": {
-    "dev": "parcel ./docs/index.html",
+    "start": "parcel ./docs/index.html",
     "compile": "tsc"
   },
   "dependencies": {
@@ -13,13 +13,14 @@
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@types/d3": "^5.7.2",
+    "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "parcel": "^1.12.4",
     "parcel-bundler": "^1.6.1",
-    "typescript": "^3.9.7",
+    "prettier": "^2.0.5",
     "tslint": "^6.1.0",
-    "husky": "^4.2.5",
-    "prettier": "^2.0.5"
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.7"
   },
   "lint-staged": {
     "*.ts": [
@@ -32,14 +33,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dotcodes/pie-chart.git"
+    "url": "https://github.com/dotcodes/easy-pie.git"
   },
   "keywords": [
     "chart",
     "pie-chart",
     "awesome",
     "donut chart",
-    "d3"
+    "d3",
+    "easy"
   ],
   "license": "MIT"
 }
